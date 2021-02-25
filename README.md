@@ -24,3 +24,30 @@
 
 ### 3. Sample Code
 * [C_Api_Sample.nim](https://github.com/YesDrX/onnxruntime-nim/blob/main/sample/C_Api_Sample.nim) is a direct translation from [C_Api_Sample.cpp](https://github.com/microsoft/onnxruntime/blob/master/csharp/test/Microsoft.ML.OnnxRuntime.EndToEndTests.Capi/C_Api_Sample.cpp)
+* Assume you have both Onnxruntime library and Onnxruntime-nim installed
+```nim
+cd ./sample
+nim c --run C_Api_Sample.nim
+```
+* Output
+```
+Using Onnxruntime C Api : 1.6.0
+WARNING: Since openmp is enabled in this build, this API cannot be used to configure intra op num threads. Please use the openmp environment variables to control the number of threads.
+Using Onnxruntime C API
+Number of inputs = 1
+Input 0 : name= data_0
+Input 0 : type = ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT
+Input 0 : num_dims = 4
+Input 0 : dim 0 = 1
+Input 0 : dim 1 = 3
+Input 0 : dim 2 = 224
+Input 0 : dim 3 = 224
+[Class 0] :  0.000045
+[Class 1] :  0.003846
+[Class 2] :  0.000125
+[Class 3] :  0.001180
+[Class 4] :  0.001317
+Done!
+```
+
+```
