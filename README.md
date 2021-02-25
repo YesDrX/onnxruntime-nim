@@ -1,6 +1,10 @@
 # onnxruntime-nim
 [onnxruntime C Api](https://github.com/microsoft/onnxruntime/blob/master/include/onnxruntime/core/session/onnxruntime_c_api.h) wrapped for nim
 
+* Wrapped C Api is generated using [c2nim](https://github.com/nim-lang/c2nim)
+* [Onnxruntime Home Page](https://www.onnxruntime.ai/)
+* [Onnxruntime Github](https://github.com/microsoft/onnxruntime)
+
 ## Install
 
 ### 1. Install Onnxruntime
