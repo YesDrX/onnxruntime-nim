@@ -10,7 +10,7 @@
 
 ### 1. Install Onnxruntime
  * Go to [Onnxruntime Releases](https://github.com/microsoft/onnxruntime/releases/tag/v1.6.0)
- * Choose source code/compiled binaries for your system, such as the one for [Linux Cpu 1.6.0](https://github.com/microsoft/onnxruntime/releases/download/v1.6.0/onnxruntime-linux-x64-1.6.0.tgz)
+ * Choose source code/compiled binaries for your system, such as the one for [Linux X86_64 CPU 1.6.0](https://github.com/microsoft/onnxruntime/releases/download/v1.6.0/onnxruntime-linux-x64-1.6.0.tgz)
  * Unzip the file, copy ./include and ./lib to the right places
  
    For example, on Linux, you may copy ./lib to /usr/lib/x86_64-linux-gn/, and ./include/ to /usr/include/
