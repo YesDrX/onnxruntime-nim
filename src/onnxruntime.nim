@@ -301,3 +301,9 @@ type
     GetVersionString*: proc (): cstring {.cdecl.}
 
 proc OrtGetApiBase*(): ptr OrtApiBase {.cdecl, importc: "OrtGetApiBase", dynlib: libname.}
+
+let 
+    apiBase = OrtGetApiBase()
+    onxApi* = apiBase.GetApi(ORT_API_VERSION)
+
+echo "Using Onnxruntime C Api : " & $apiBase.GetVersionString()
