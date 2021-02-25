@@ -1,7 +1,7 @@
 #ifdef C2NIM
 # dynlib libname
 # cdecl
-# define libname "/mnt/c/Users/weixi/Downloads/onnxruntime-win-x64-gpu-1.6.0/lib/onnxruntime.dll"
+# define libname "libonnxruntime.so"
 #endif
 
 typedef enum ONNXTensorElementDataType
