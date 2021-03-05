@@ -22,6 +22,9 @@
   cd onnxruntime-nim
   nimble install
   ```
+  ```
+  nimble install onnxruntime
+  ```
 
 ### 3. Sample Code
 * [C_Api_Sample.nim](https://github.com/YesDrX/onnxruntime-nim/blob/main/sample/C_Api_Sample.nim) is a direct translation from [C_Api_Sample.cpp](https://github.com/microsoft/onnxruntime/blob/master/csharp/test/Microsoft.ML.OnnxRuntime.EndToEndTests.Capi/C_Api_Sample.cpp)
